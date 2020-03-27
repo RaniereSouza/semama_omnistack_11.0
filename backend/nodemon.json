@@ -1,0 +1,6 @@
+{
+    "verbose": true,
+    "watch": ["src/"],
+    "ext": "ts,tsx",
+    "exec": "npm run start"
+}
