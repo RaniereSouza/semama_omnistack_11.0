@@ -1,0 +1,42 @@
+div.register-container {
+    width:           100%;
+    max-width:       992px;
+    justify-content: center;
+}
+
+    div.register-container,
+    div.register-container div.register-content {
+        position:    relative;
+        display:     flex;
+        align-items: center;
+    }
+
+    div.register-container div.register-content {
+        width:           100%;
+        box-shadow:      0 0 50px rgba(0, 0, 0, 0.1);
+        border-radius:   8px;
+        padding:         40px 80px;
+        justify-content: space-between;
+        background:      #fff;
+    }
+
+        div.register-container div.register-content section {
+            width:     100%;
+            max-width: 350px;
+        }
+
+            div.register-container div.register-content section h2 {
+                margin:      64px 0 32px;
+                font-size:   32px;
+                font-weight: 300;
+            }
+
+            div.register-container div.register-content section p {
+                margin-bottom: 20px;
+                font-size:     18px;
+                color:         #737380;
+            }
+
+        div.register-container div.register-content form {
+            max-width: 450px;
+        }

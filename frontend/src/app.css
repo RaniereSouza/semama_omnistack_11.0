@@ -1,0 +1,43 @@
+body > main {
+    position:        relative;
+    min-height:      calc(100vh - 30px);
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: center;
+    padding:         15px;
+}
+
+    body > main > button {
+        align-self: start;
+    }
+
+body > header {
+    margin:     0;
+    max-height: 50px;
+    height:     50px;
+    overflow:   hidden;
+    padding:    0 15px;
+}
+
+    body > header h1 {
+        margin: 0;
+    }
+
+body > footer {
+    margin:          0;
+    max-height:      30px;
+    height:          30px;
+    overflow:        hidden;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    padding:         0 15px;
+    text-align:      center;
+    font-size:       12px;
+    color:           #666;
+}
+
+    body > footer p {
+        margin: 0;
+    }
