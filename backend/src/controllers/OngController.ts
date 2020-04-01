@@ -23,16 +23,23 @@ class OngController {
         }  = req.body,
         id = crypto.randomBytes(4).toString('HEX');
 
-        await connection('ongs').insert({
-            id,
-            name,
-            email,
-            whatsapp,
-            city,
-            uf
-        });
+        try {
 
-        return res.json({ id });
+            await connection('ongs').insert({
+                id,
+                name,
+                email,
+                whatsapp,
+                city,
+                uf
+            });
+
+            return res.status(201).json({ id });
+        }
+        catch (err) {
+            console.log(`Error: ${JSON.stringify(err)}`);
+            return res.status(400).json({error: err.message || err.details || err.status || err});
+        }
     }
 }
 

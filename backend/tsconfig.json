@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
         "outDir": "./dist/",
-        "baseUrl": "./src/",
+        "baseUrl": "./",
         "noImplicitAny": true,
         "module": "es6",
         "target": "es5",
         "jsx": "react",
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "traceResolution": true,
+        "diagnostics": true
     }
 }

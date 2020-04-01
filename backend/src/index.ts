@@ -3,9 +3,10 @@ import cors    from 'cors';
 
 import { routes } from './routes';
 
-const dotenv = require('dotenv').config(),
-      app    = express(),
-      port   = process.env.PORT;
+require('dotenv').config();
+
+const app  = express(),
+      port = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());

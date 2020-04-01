@@ -38,15 +38,22 @@ class IncidentController {
                 {
                     authorization:ong_id
                 } = req.headers;
+        
+        try {
+            
+            const [ id ] = await connection('incidents').insert({
+                title,
+                description,
+                value,
+                ong_id
+            });
 
-        const [ id ] = await connection('incidents').insert({
-            title,
-            description,
-            value,
-            ong_id
-        });
-
-        return res.json({ id });
+            return res.status(201).json({ id });
+        }
+        catch (err) {
+            console.log(`Error: ${JSON.stringify(err)}`);
+            return res.status(400).json({error: err.message || err.details || err.status || err});
+        }
     }
 
     async delete (req: Request, res: Response) {

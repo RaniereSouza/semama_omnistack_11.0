@@ -21,11 +21,13 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.6",
     "@types/express": "^4.17.3",
+    "@types/knex": "^0.16.1",
     "@types/node": "^12.12.31",
+    "@types/sqlite3": "^3.1.6",
     "nodemon": "^2.0.2",
     "ts-loader": "^6.2.2",
-    "ts-node": "^8.8.1",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
