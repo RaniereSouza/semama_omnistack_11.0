@@ -1,7 +1,8 @@
-import crypto                from 'crypto';
 import { Request, Response } from 'express';
 
 import connection from '../db/connection';
+
+import generateUniqueId from '../utils/generateUniqueId';
 
 class OngController {
 
@@ -21,7 +22,7 @@ class OngController {
             city,
             uf
         }  = req.body,
-        id = crypto.randomBytes(4).toString('HEX');
+        id = generateUniqueId();
 
         try {
 

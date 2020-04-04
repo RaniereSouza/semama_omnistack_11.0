@@ -1,7 +1,7 @@
 div.profile-container {
     width:      100%;
     max-width:  1024px;
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh - 30px - 30px); /* minus footer, minus padding */
 }
 
     div.profile-container header {

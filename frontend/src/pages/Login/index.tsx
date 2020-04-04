@@ -13,7 +13,6 @@ type LoginState = {
     id: string
 };
 
-
 // Stateful Container
 class LoginContainer extends React.Component<RouteComponentProps, LoginState> {
 

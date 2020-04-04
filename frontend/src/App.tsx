@@ -8,7 +8,7 @@ import Routes from './routes';
 import './app.css';
 
 type AppState = {
-  counter : number
+  // counter : number
 };
 
 class AppContainer extends React.Component<{}, AppState> {
@@ -18,24 +18,29 @@ class AppContainer extends React.Component<{}, AppState> {
     super(props);
 
     this.state = {
-      counter: 0
+      // counter: 0
     }
 
-    this.increment = this.increment.bind(this);
+    // this.increment = this.increment.bind(this);
   }
 
-  increment (event: React.MouseEvent) {
+  /* increment (event: React.MouseEvent) {
     this.setState({counter: this.state.counter + 1});
-  }
+  } */
 
   render () {
-    return <App counter={this.state.counter} increment={this.increment}/>;
+    return (
+      <App 
+        // counter={this.state.counter}
+        // increment={this.increment}
+      />
+    );
   }
 }
 
 type AppProps = {
-  counter   : number,
-  increment : React.MouseEventHandler
+  // counter   : number,
+  // increment : React.MouseEventHandler
 };
 
 const App = (props : AppProps) => {

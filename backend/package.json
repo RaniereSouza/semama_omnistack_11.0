@@ -4,8 +4,12 @@
   "description": "",
   "private": true,
   "main": "dist/index.bundle.js",
+  "engines": {
+    "node": "^12.16.1",
+    "npm": "^6.13.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "npx webpack --config webpack.config.js",
     "start": "(npm run build) && node dist/index.bundle.js",
     "start:dev": "npx nodemon --config nodemon.json"
@@ -14,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "celebrate": "^12.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -21,12 +26,19 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.3",
+    "@types/jest": "^25.2.1",
     "@types/knex": "^0.16.1",
     "@types/node": "^12.12.31",
     "@types/sqlite3": "^3.1.6",
+    "babel-jest": "^25.2.6",
+    "jest": "^25.2.6",
     "nodemon": "^2.0.2",
+    "ts-jest": "^25.3.1",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",

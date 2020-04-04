@@ -62,7 +62,11 @@ export default StyleSheet.create({
         width:             '47.5%',
     },
     actionText: {
-        color:     '#fff',
-        textAlign: 'center',
+        color:         '#fff',
+        textAlign:     'center',
+        fontVariant:   ['small-caps'],
+        textTransform: 'uppercase',
+        letterSpacing: 2.5,
+        fontWeight:    'bold',
     },
 });

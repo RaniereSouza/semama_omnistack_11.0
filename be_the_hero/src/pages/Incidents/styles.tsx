@@ -26,7 +26,7 @@ export default StyleSheet.create({
         marginBottom: 15,
         marginTop:    30,
         color:        '#13131a',
-        fontWeight:   'bold',
+        fontWeight:   '300',
     },
     description: {
         fontSize:   15,
