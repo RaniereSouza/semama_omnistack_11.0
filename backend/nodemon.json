@@ -1,6 +1,7 @@
 {
     "verbose": true,
     "watch": ["src/"],
+    "ignore": ["src/db/test.sqlite", "src/db/test.sqlite-journal"],
     "ext": "ts,tsx",
     "exec": "npm run start"
 }
