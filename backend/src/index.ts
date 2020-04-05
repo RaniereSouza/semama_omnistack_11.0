@@ -1,18 +1,9 @@
-import express    from 'express';
-import cors       from 'cors';
-import dotenv     from 'dotenv';
-import { errors } from 'celebrate';
+import dotenv from 'dotenv';
 
-import { routes } from './routes';
+import app from './app';
 
 dotenv.config();
 
-const app  = express(),
-      port = process.env.PORT;
-
-app.use(cors());
-app.use(express.json());
-app.use(routes);
-app.use(errors());
+const port = process.env.PORT || 3333;
 
 app.listen(port, () => console.log(`listening on port ${port}...`));
