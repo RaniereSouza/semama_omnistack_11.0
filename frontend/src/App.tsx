@@ -7,9 +7,12 @@ import Routes from './routes';
 
 import './app.css';
 
+
 type AppState = {
   // counter : number
 };
+
+// TODO: Create a non-intrusive notification system to use instead of alert()
 
 class AppContainer extends React.Component<{}, AppState> {
 

@@ -42,6 +42,9 @@ type IncidentsState = {
     incidents: Array<IncidentEntity>
 };
 
+//TODO: Roll welcome text together with the cards
+//TODO: Indicate page loading when cards list is reaching the end
+
 // Stateful Container
 const IncidentsContainer = () => {
 

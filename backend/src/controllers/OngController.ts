@@ -16,13 +16,13 @@ class OngController {
     async create (req: Request, res: Response) {
 
         const   {
-            name,
-            email,
-            whatsapp,
-            city,
-            uf
-        }  = req.body,
-        id = generateUniqueId();
+                    name,
+                    email,
+                    whatsapp,
+                    city,
+                    uf
+                }  = req.body,
+                id = generateUniqueId();
 
         try {
 
